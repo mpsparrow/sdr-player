@@ -1,5 +1,11 @@
-# sdr-rec
-Test RTL-SDR audio recorder using [pyrtlsdr](https://github.com/pyrtlsdr/pyrtlsdr)
-
 [![CodeFactor](https://www.codefactor.io/repository/github/mpsparrow/sdr-rec/badge)](https://www.codefactor.io/repository/github/mpsparrow/sdr-rec)
 [![example workflow](https://github.com/mpsparrow/sdr-rec/actions/workflows/black.yml/badge.svg)](https://github.com/mpsparrow/sdr-rec/actions/workflows/black.yml)
+
+# sdr-player
+RTL-SDR WFM audio player using [pyrtlsdr](https://github.com/pyrtlsdr/pyrtlsdr)
+
+The goal of this project is largely unknown at this time. My aim is to learn and grow my SDR knowledge. Expect lots of bugs and missing features.
+
+## Install
+
+Having a working [pyrtlsdr](https://github.com/pyrtlsdr/pyrtlsdr) installation with `librtlsdr` files in place. Connect a RTL-SDR dongle to your system with the proper drivers. Run `listen.py`.
