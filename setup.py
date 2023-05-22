@@ -1,10 +1,14 @@
-from distutils.core import setup
+import sys
+from cx_Freeze import setup, Executable
+
+# base="Win32GUI" should be used only for Windows GUI app
+base = "Win32GUI" if sys.platform == "win32" else None
 
 setup(
-    name="sdr-rec",
-    version="1.0",
-    description="RTL-SDR audio recorder",
+    name="sdr-player",
+    version="0.1",
+    description="RTL-SDR WFM player",
     author="Matthew Sparrow",
     url="https://github.com/mpsparrow/sdr-rec",
-    packages=["distutils", "distutils.command", pyrtlsdr],
+    executables=[Executable("./sdr-player/listen.py", base=base)],
 )
