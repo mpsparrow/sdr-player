@@ -3,3 +3,4 @@ pyaudio
 pyrtlsdr
 tkinter
 ttkthemes
+cx_Freeze

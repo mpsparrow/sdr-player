@@ -13,5 +13,5 @@ The goal of this project is largely unknown at this time. My aim is to learn and
 ### Windows
 A compiled Windows version is available for download in the [latest release](https://github.com/mpsparrow/sdr-player/releases/latest).
 
-### Manual
+### Python
 Having a working [pyrtlsdr](https://github.com/pyrtlsdr/pyrtlsdr) installation with `librtlsdr` files in place. Connect a RTL-SDR dongle to your system with the proper drivers. Run `main.py`.

@@ -15,7 +15,7 @@ packages = [
 
 setup(
     name="sdr-player",
-    version="0.2-alpha",
+    version="v0.2-alpha",
     description="RTL-SDR WFM Player",
     author="Matthew Sparrow",
     url="https://github.com/mpsparrow/sdr-rec",
