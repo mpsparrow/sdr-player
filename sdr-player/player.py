@@ -80,8 +80,9 @@ class RadioStationRecorder:
 
         if stereo:
             print(
+                f"F: {int(self.get_frequency())}",
                 f"SR: {sample_rate}",
-                "AM: Stereo",
+                "AM: S",
                 f"V: {round(self.gui.volume_slider.get(),2)}",
                 f"G: {round(self.gui.gain_slider.get(), 1)}",
             )
@@ -110,8 +111,9 @@ class RadioStationRecorder:
                 stream.write(chunk_stereo.astype(np.float32).tobytes())
         else:
             print(
+                f"F: {int(self.get_frequency())}",
                 f"SR: {sample_rate}",
-                "AM: Mono",
+                "AM: M",
                 f"V: {round(self.gui.volume_slider.get(),2)}",
                 f"G: {round(self.gui.gain_slider.get(), 1)}",
             )

@@ -9,7 +9,7 @@ class GUI:
         self.recorder = recorder
         self.window = ThemedTk(theme="yaru")
         self.window.title("RTL-SDR WFM Player")
-        self.window.geometry("400x400")
+        self.window.geometry("450x380")
         self.menu_bar = tk.Menu(self.window)
         self.window.config(menu=self.menu_bar)
         self.file_menu = tk.Menu(self.menu_bar, tearoff=0)
