@@ -6,9 +6,9 @@ base = "Win32GUI" if sys.platform == "win32" else None
 
 setup(
     name="sdr-player",
-    version="0.1",
-    description="RTL-SDR WFM player",
+    version="0.2-alpha",
+    description="RTL-SDR WFM Player",
     author="Matthew Sparrow",
     url="https://github.com/mpsparrow/sdr-rec",
-    executables=[Executable("./sdr-player/listen.py", base=base)],
+    executables=[Executable("./sdr-player/main.py", base=base)],
 )
