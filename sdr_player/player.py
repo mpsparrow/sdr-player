@@ -2,7 +2,7 @@ import numpy as np
 import pyaudio
 from rtlsdr import RtlSdr
 from threading import Thread, Event
-from gui import GUI
+from sdr_player.gui import GUI
 
 
 class RadioStationRecorder:

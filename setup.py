@@ -1,8 +1,17 @@
 import sys
 from cx_Freeze import setup, Executable
 
-# base="Win32GUI" should be used only for Windows GUI app
-base = "Win32GUI" if sys.platform == "win32" else None
+includefiles = ["README.md", "LICENSE"]
+packages = [
+    "numpy",
+    "pyaudio",
+    "rtlsdr",
+    "ttkthemes",
+    "tkinter",
+    "threading",
+    "sys",
+    "sdr_player",
+]
 
 setup(
     name="sdr-player",
@@ -10,5 +19,13 @@ setup(
     description="RTL-SDR WFM Player",
     author="Matthew Sparrow",
     url="https://github.com/mpsparrow/sdr-rec",
-    executables=[Executable("./sdr-player/main.py", base=base)],
+    options={
+        "build_exe": {
+            "include_files": includefiles,
+            "packages": packages,
+        }
+    },
+    executables=[
+        Executable("main.py", base="Win32GUI", targetName="sdr-player.exe"),
+    ],
 )
